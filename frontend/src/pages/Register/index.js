@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { FiArrowLeft } from 'react-icons/fi';
 
 import './style.css';
 
@@ -9,10 +11,15 @@ export default function Register() {
         <div className="register-container">
             <div className="content">
                 <section>
-                    <img src="{logoImg}" alt="Be-the-heroes" />
+                    <img src={logoImg} alt="Be-the-heroes" />
 
                     <h1>Cadastro</h1>
                     <p>Faça seu cadastro, entre na plataforma e ajude as pessoas a encontrarem os casos da sua ONG.</p>
+
+                    <Link className="back-link" to="/register">
+                        <FiArrowLeft size={16} color="#E02041" />
+                        Não tenho cadastro
+                    </Link>
                 </section>
                 <form>
 
