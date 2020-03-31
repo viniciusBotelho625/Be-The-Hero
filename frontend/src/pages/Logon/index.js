@@ -16,7 +16,7 @@ export default function Logon() {
                 <form>
                     <h1>Faça seu Login</h1>
 
-                    <input placeholder="    Digite o ID"/>
+                    <input placeholder="Digite o ID"/>
                     <button className="button" type="submit">Entrar</button>
 
                     <Link className="back-link" to="/register">
