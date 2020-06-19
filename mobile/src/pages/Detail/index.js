@@ -1,11 +1,28 @@
 import React from 'react';
 import { Feather } from '@expo/vector-icons';
 import { View, Image, Text, TouchableOpacity } from 'react-native';
+import * as MailComposer from 'expo-mail-composer'
 
 import logoImg from '../../assents/logo.png';
 import styles from './styles';
 
 export default function Detail() {
+
+    const message = 'Olá CAMP, estou entrando em contato, pois gostaria de ajudar no caso "Cadelinha atropelada" com o valor de R$ 120,00'
+    
+    
+    function sendEmail() {
+        MailComposer.composeAsync({
+            subject: 'Heroi do caso: Cadelinha atropelada',
+            recipients: ['viniciusoficialbotelho@outlook.com'],
+            body: message,
+        })
+    }
+
+    function sendWhatsApp() {
+
+    }
+
     return (
         <View style={styles.container}>
             <View style={styles.header}>
@@ -37,7 +54,7 @@ export default function Detail() {
                         <Text style={styles.actionText}>WhatsApp</Text>
                     </TouchableOpacity>
 
-                    <TouchableOpacity style={styles.actions} onPress={() =>{}}>
+                    <TouchableOpacity style={styles.actions} onPress={sendEmail}>
                         <Text style={styles.actionText}>E-mail</Text>
                     </TouchableOpacity>
                 </View>
