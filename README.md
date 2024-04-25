@@ -22,7 +22,7 @@
 <p>O BeTheHero é um projeto que visa conectar pessoas que desejam fazer contribuições monetárias a ONG's (Organizações não governamentais) que precisam de ajuda.</p>
 <br></br>
 <p align="center"> 
-  <img src="https://www.blog.ciromoura.com.br/wp-content/uploads/2020/04/Untitled-11-1024x721.png" width="700">
+  <img src="https://github.com/viniciusBotelho625/Be-The-Hero/blob/master/frontend/src/assets/Be-the-hero.png" width="700">
 </p>
 <h3>Como contribuir</h3>
 <ul>
